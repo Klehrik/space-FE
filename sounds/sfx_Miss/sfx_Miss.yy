@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 0.369059,
+  "duration": 12.747755,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_Miss.ogg",
+  "soundFile": "sfx_Miss.wav",
   "type": 1,
   "volume": 1.0,
 }

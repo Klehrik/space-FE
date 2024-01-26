@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 3,
   "conversionMode": 0,
-  "duration": 161.46785,
+  "duration": 12.747755,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "mus_Map1.mp3",
+  "soundFile": "mus_Map1.wav",
   "type": 1,
-  "volume": 0.5,
+  "volume": 1.0,
 }

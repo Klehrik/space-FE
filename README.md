@@ -8,7 +8,8 @@ Originally created in **January 2021**.
 A tactics game in space (the FE stands for Fire Emblem).  
 Dropped due to the combat system being way too convoluted to follow (I have since forgotten how it works).
 
-Used music and sound effects from FTL: Faster Than Light as placeholder, which have been replaced with empty sound files on uploading here for copyright reasons.
+Used music and sound effects from FTL: Faster Than Light as placeholder, which have been replaced with empty sound files on uploading here for copyright reasons.  
+The font used is from [PICO-8](https://www.lexaloffle.com/pico-8.php).
 
 ---
 

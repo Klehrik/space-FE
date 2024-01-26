@@ -19,3 +19,4 @@ Arrows - Move cursor
 Z - Select  
 X - Back  
 R - Reset  
+F - Fullscreen  

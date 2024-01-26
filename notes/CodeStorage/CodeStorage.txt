@@ -1,0 +1,39 @@
+// Keyboard Inputs
+if (keyboard_check_pressed(ord("Z")))
+{
+	if (Selected < 0) // Select ship
+	{
+		// Search for ship being selected
+		with (obj_Ship) if (Team == 1 and PosX == other.CsrXTo and PosY == other.CsrYTo)
+		{
+			other.Selected = id;
+			other.SelectedState = 0; // 0 - Choose Move, 1 - Moving, 2 - Choose Attack
+			
+			update_unit_map(); // Update UnitMap
+			
+			// Create pathfinding map (and destroy previous one if it exists)
+			if (ds_exists(Map, ds_type_grid)) ds_grid_destroy(Map);
+			Map = ds_grid_create(global.MAP_WIDTH, global.MAP_HEIGHT);
+			update_pathfind_map(PosX, PosY);
+		}
+	}
+	else if (SelectedState == 0) // Move ship
+	{
+		var move = min(Selected.MaxEngine, Selected.MaxMove);
+		var empty = global.UnitMap[# CsrXTo, CsrYTo] == 0;
+		if (Selected.Map[# CsrXTo, CsrYTo] <= move and empty and Selected.Engine >= 1) { Selected.Engine -= 1; SelectedState = 1; } // Normal move
+		else if (Selected.Map[# CsrXTo, CsrYTo] <= move * 2 and empty and Selected.Engine >= 3) { Selected.Engine -= 3; SelectedState = 1; } // Far move
+		else deselect_ship();
+		
+		if (SelectedState == 1) update_pathfind_map(CsrXTo, CsrYTo); // Update pathfinding map to new destination
+	}
+}
+else if (keyboard_check_pressed(ord("X")))
+{
+	if (Selected >= 0 and SelectedState != 1) deselect_ship(); // Deselect ship
+}
+
+
+
+
+

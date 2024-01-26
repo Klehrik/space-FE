@@ -18,3 +18,4 @@ The font used is from [PICO-8](https://www.lexaloffle.com/pico-8.php).
 Arrows - Move cursor  
 Z - Select  
 X - Back  
+R - Reset  

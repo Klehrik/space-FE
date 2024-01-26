@@ -15,5 +15,5 @@ Used music and sound effects from FTL: Faster Than Light as placeholder, which h
 ### Controls
 
 Arrows - Move cursor  
-Z - Select
-X - Back
+Z - Select  
+X - Back  
